@@ -1,40 +1,63 @@
 const puppeteer = require('puppeteer');
-const delay = require('./delay.js');
-const readlineSync = require('readline-sync');
+const delay = require('./utils/delay');
 
 console.log('Bem vindo ao WebExtractor!');
 
 async function webScrappingFunc() {
-  const stockCode = readlineSync.question('Digite o código da Ação que você deseja consultar: ');
-
-
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
-  await page.goto('https://fundamentus.com.br/');
-
-  await page.click('#completar');
-  await page.keyboard.type(stockCode);
-
-  await delay(1000);
-
-  await page.keyboard.press('Enter');
+  await page.goto('https://br.investing.com/equities/brazil');
 
 
-  const stockPrice = await page.$('body > div.center > div.conteudo.clearfix > table:nth-child(2) > tbody > tr:nth-child(1) > td.data.destaque.w3 > span');
+  await page.click('#onetrust-accept-btn-handler');
+  await delay(5000);
+  await page.keyboard.press('Escape');
 
-  await page.on('load', () => {
-    console.log(stockPrice)
 
+  const stockNames = await page.evaluate(() => {
+    const stocksNamesElement = document.querySelectorAll("tr td.bold.left.noWrap.elp.plusIconTd a");
+
+    let stockNames = [];
+
+    stocksNamesElement.forEach(name => stockNames.push(name.innerText));
+
+    return stockNames;
+
+  });
+
+  const stocksLastPrice = await page.evaluate(() => {
+    const stockSpanElement = document.querySelectorAll('span.alertBellGrayPlus.js-plus-icon.genToolTip.oneliner');
+
+    let stocksIDs = [];
+
+    stockSpanElement.forEach(spanTag => {
+      const dataAttr = spanTag.getAttribute("data-id");
+      stocksIDs.push(dataAttr);
+    });
+
+
+    let arrOfStocksLastPrice = [];
+
+    stocksIDs.forEach(id => {
+      let lastPriceStockElement = document.querySelector(`#pair_${id} > td.pid-${id}-last`);
+      arrOfStocksLastPrice.push(lastPriceStockElement.innerText);
+    })
+
+    return arrOfStocksLastPrice;
+
+  });
+
+
+  let stocksObj = {};
+
+  stockNames.forEach((stockName, stockLastPrice) => {
+    stocksObj[stockName] = `R$ ${stocksLastPrice[stockLastPrice]}`;
   })
 
+  console.log(stocksObj);
 
+  await browser.close();
 
-
-
-
-  // await browser.close();
-
-};
+}
 
 webScrappingFunc();
-
