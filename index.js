@@ -49,13 +49,16 @@ async function webStractor() {
   });
 
 
-  let stocksObj = {};
+  let stocksList = [];
 
-  stockNames.forEach((stockName, stockLastPrice) => {
-    stocksObj[stockName] = `R$ ${stocksLastPrice[stockLastPrice]}`;
-  })
+  for (let i = 0; i < stockNames.length; i++) {
+    stocksList.push({
+      stock: stockNames[i],
+      price: stocksLastPrice[i]
+    });
+  };
 
-  console.log(stocksObj);
+  console.log(stocksList);
 
   await browser.close();
 
