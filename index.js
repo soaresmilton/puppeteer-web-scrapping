@@ -2,8 +2,9 @@ const puppeteer = require('puppeteer');
 const delay = require('./utils/delay');
 
 console.log('Bem vindo ao WebExtractor!');
+console.log('Aguarde enquanto o robô extrai as informações.');
 
-async function webScrappingFunc() {
+async function webStractor() {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   await page.goto('https://br.investing.com/equities/brazil');
@@ -58,6 +59,7 @@ async function webScrappingFunc() {
 
   await browser.close();
 
+  console.log('Fim da execução do programa');
 }
 
-webScrappingFunc();
+webStractor();
