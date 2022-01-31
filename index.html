@@ -18,24 +18,22 @@
       align-items: center;
     }
 
-    table {
-      text-align: center;
-    }
-
-    table th {
+    table th,
+    td {
       border: 1px solid black;
     }
-
   </style>
 
   <div class="container">
+
+    <input type="text" name="searc" id="search" placeholder="Procurar...">
+
     <table>
       <tr id="title">
         <th>Stocks</th>
         <th>Last Price</th>
       </tr>
 
-      <tr class="row"></tr>
 
     </table>
   </div>
@@ -55,7 +53,22 @@
         </tr>
         `
       }
-    })(); 
+    })();
+
+
+    const searchInput = document.getElementById('search');
+    const rows = document.querySelectorAll('tr');
+    console.log(rows);
+
+    searchInput.addEventListener('keyup', (event) => {
+      // console.log(event)
+
+      const q = event.target.value.toLowerCase();
+      rows.forEach(row => {
+        row.querySelector('.stock-name').textContent.toLowerCase().startsWith(q) ? (row.style.display = '') : (row.style.display = 'none');
+      })
+
+    });
   </script>
 </body>
 
