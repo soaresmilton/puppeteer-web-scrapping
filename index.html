@@ -11,6 +11,20 @@
 <body>
 
   <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table {
+      text-align: center;
+    }
+
+    table th {
+      border: 1px solid black;
+    }
 
   </style>
 
@@ -37,13 +51,10 @@
         document.querySelector('table').innerHTML += `
         <tr class="row">
           <td class="stock-name">${stock[i].stock}</td>
-          <td class="stock-price">${stock[i].price}</td>
+          <td class="stock-price">R$ ${stock[i].price}</td>
         </tr>
         `
       }
-
-
-      // document.querySelector('.row').innerHTML = htmlList;
     })(); 
   </script>
 </body>
