@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocks Prices</title>
+</head>
+
+<body>
+
+  <style>
+
+  </style>
+
+  <div class="container">
+    <table>
+      <tr id="title">
+        <th>Stocks</th>
+        <th>Last Price</th>
+      </tr>
+
+      <tr class="row"></tr>
+
+    </table>
+  </div>
+
+
+  <script>
+    (async () => {
+      const response = await fetch('./stocks.json');
+      const data = await response.json();
+
+      for (let i = 0; i < data.length; i++) {
+        const stock = data;
+        document.querySelector('table').innerHTML += `
+        <tr class="row">
+          <td class="stock-name">${stock[i].stock}</td>
+          <td class="stock-price">${stock[i].price}</td>
+        </tr>
+        `
+      }
+
+
+      // document.querySelector('.row').innerHTML = htmlList;
+    })(); 
+  </script>
+</body>
+
+</html>

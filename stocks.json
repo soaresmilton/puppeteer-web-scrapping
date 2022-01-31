@@ -1,0 +1,370 @@
+[
+  {
+    "stock": "3R Petroleum ON",
+    "price": "37,74"
+  },
+  {
+    "stock": "Alpargatas PN",
+    "price": "28,75"
+  },
+  {
+    "stock": "Ambev ON",
+    "price": "14,93"
+  },
+  {
+    "stock": "Americanas",
+    "price": "31,41"
+  },
+  {
+    "stock": "Assaí ON",
+    "price": "12,38"
+  },
+  {
+    "stock": "Azul PN",
+    "price": "27,05"
+  },
+  {
+    "stock": "B3 ON",
+    "price": "14,74"
+  },
+  {
+    "stock": "Banco do Brasil ON",
+    "price": "32,49"
+  },
+  {
+    "stock": "Banco Inter Unit",
+    "price": "24,72"
+  },
+  {
+    "stock": "Banco Pan PN",
+    "price": "10,16"
+  },
+  {
+    "stock": "BB Seguridade ON",
+    "price": "22,68"
+  },
+  {
+    "stock": "BR Malls Par ON",
+    "price": "9,43"
+  },
+  {
+    "stock": "Bradesco ON",
+    "price": "18,60"
+  },
+  {
+    "stock": "Bradesco PN ",
+    "price": "22,60"
+  },
+  {
+    "stock": "Bradespar PN",
+    "price": "27,12"
+  },
+  {
+    "stock": "Braskem PN",
+    "price": "50,00"
+  },
+  {
+    "stock": "BRF ON",
+    "price": "22,85"
+  },
+  {
+    "stock": "BTG Pactual Unit",
+    "price": "23,46"
+  },
+  {
+    "stock": "Carrefour ON",
+    "price": "16,54"
+  },
+  {
+    "stock": "CCR ON",
+    "price": "12,73"
+  },
+  {
+    "stock": "CEMIG PN Pref",
+    "price": "13,03"
+  },
+  {
+    "stock": "Cielo ON",
+    "price": "2,28"
+  },
+  {
+    "stock": "Cogna Educacao",
+    "price": "2,52"
+  },
+  {
+    "stock": "Companhia de Locacao das Americas",
+    "price": "25,62"
+  },
+  {
+    "stock": "COPEL Pref B",
+    "price": "7,11"
+  },
+  {
+    "stock": "Cosan ON",
+    "price": "23,21"
+  },
+  {
+    "stock": "CPFL Energia ON",
+    "price": "28,40"
+  },
+  {
+    "stock": "CSN Mineração ON",
+    "price": "7,15"
+  },
+  {
+    "stock": "CSN ON",
+    "price": "25,67"
+  },
+  {
+    "stock": "CVC Brasil ON",
+    "price": "13,65"
+  },
+  {
+    "stock": "Cyrela Realt ON",
+    "price": "17,16"
+  },
+  {
+    "stock": "Dexco",
+    "price": "15,22"
+  },
+  {
+    "stock": "Ecorodovias ON",
+    "price": "7,75"
+  },
+  {
+    "stock": "EDP Brasil ON",
+    "price": "21,47"
+  },
+  {
+    "stock": "Eletrobras ON",
+    "price": "35,43"
+  },
+  {
+    "stock": "Eletrobras PNB",
+    "price": "34,63"
+  },
+  {
+    "stock": "Embraer ON",
+    "price": "19,81"
+  },
+  {
+    "stock": "Energisa Unit",
+    "price": "43,03"
+  },
+  {
+    "stock": "Eneva ON",
+    "price": "12,67"
+  },
+  {
+    "stock": "Engie Brasil ON",
+    "price": "40,14"
+  },
+  {
+    "stock": "Equatorial ON",
+    "price": "22,65"
+  },
+  {
+    "stock": "Eztec ON",
+    "price": "21,46"
+  },
+  {
+    "stock": "Fleury ON",
+    "price": "19,79"
+  },
+  {
+    "stock": "Gerdau PN",
+    "price": "28,07"
+  },
+  {
+    "stock": "Gol PN",
+    "price": "17,01"
+  },
+  {
+    "stock": "Grupo Soma ON",
+    "price": "14,26"
+  },
+  {
+    "stock": "Hapvida ON",
+    "price": "12,40"
+  },
+  {
+    "stock": "Hypera",
+    "price": "30,03"
+  },
+  {
+    "stock": "Iguatemi Unt",
+    "price": "19,78"
+  },
+  {
+    "stock": "Intermedica ON",
+    "price": "69,50"
+  },
+  {
+    "stock": "IRB Brasil ON",
+    "price": "3,21"
+  },
+  {
+    "stock": "Itau Unibanco PN",
+    "price": "24,79"
+  },
+  {
+    "stock": "Itausa PN",
+    "price": "10,07"
+  },
+  {
+    "stock": "JBS ON",
+    "price": "36,06"
+  },
+  {
+    "stock": "JHSF Part ON",
+    "price": "6,20"
+  },
+  {
+    "stock": "Klabin Unit",
+    "price": "24,82"
+  },
+  {
+    "stock": "Localiza ON",
+    "price": "57,44"
+  },
+  {
+    "stock": "Locaweb On",
+    "price": "9,18"
+  },
+  {
+    "stock": "Lojas Renner ON",
+    "price": "28,15"
+  },
+  {
+    "stock": "Magazine Luiza ON",
+    "price": "6,71"
+  },
+  {
+    "stock": "Marfrig ON",
+    "price": "22,57"
+  },
+  {
+    "stock": "Méliuz ON",
+    "price": "2,83"
+  },
+  {
+    "stock": "Met. Gerdau PN",
+    "price": "11,69"
+  },
+  {
+    "stock": "Minerva ON",
+    "price": "9,52"
+  },
+  {
+    "stock": "MRV ON",
+    "price": "13,27"
+  },
+  {
+    "stock": "Multiplan ON",
+    "price": "21,27"
+  },
+  {
+    "stock": "Natura ON",
+    "price": "21,50"
+  },
+  {
+    "stock": "Pão de Açúcar CBD ON",
+    "price": "21,64"
+  },
+  {
+    "stock": "Petrobras ON",
+    "price": "35,89"
+  },
+  {
+    "stock": "Petrobras PN",
+    "price": "32,54"
+  },
+  {
+    "stock": "Petrorio ON",
+    "price": "23,84"
+  },
+  {
+    "stock": "Petz ON",
+    "price": "17,06"
+  },
+  {
+    "stock": "Positivo Inf ON",
+    "price": "9,05"
+  },
+  {
+    "stock": "Qualicorp ON",
+    "price": "17,87"
+  },
+  {
+    "stock": "Raia Drogasil ON",
+    "price": "22,70"
+  },
+  {
+    "stock": "Rede D'Or ON",
+    "price": "43,99"
+  },
+  {
+    "stock": "Rumo ON",
+    "price": "15,76"
+  },
+  {
+    "stock": "Sabesp ON",
+    "price": "36,50"
+  },
+  {
+    "stock": "Santander Brasil Unit",
+    "price": "33,04"
+  },
+  {
+    "stock": "Sul America Unit",
+    "price": "25,69"
+  },
+  {
+    "stock": "Suzano Papel ON",
+    "price": "59,30"
+  },
+  {
+    "stock": "TAEE UNIT",
+    "price": "37,70"
+  },
+  {
+    "stock": "Telefonica Brasil ON",
+    "price": "48,87"
+  },
+  {
+    "stock": "TIM ON",
+    "price": "12,99"
+  },
+  {
+    "stock": "Totvs ON",
+    "price": "27,78"
+  },
+  {
+    "stock": "Ultrapar ON",
+    "price": "15,16"
+  },
+  {
+    "stock": "Usiminas PNA",
+    "price": "16,01"
+  },
+  {
+    "stock": "Vale ON",
+    "price": "83,66"
+  },
+  {
+    "stock": "Via SA",
+    "price": "4,57"
+  },
+  {
+    "stock": "Vibra Energia",
+    "price": "22,72"
+  },
+  {
+    "stock": "Weg ON",
+    "price": "31,62"
+  },
+  {
+    "stock": "YDUQS Participacoes",
+    "price": "21,58"
+  }
+]

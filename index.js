@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const delay = require('./utils/delay');
+const fs = require('fs');
 
 console.log('Bem vindo ao WebExtractor!');
 console.log('Aguarde enquanto o robô extrai as informações.');
@@ -48,21 +49,27 @@ async function webStractor() {
 
   });
 
+  const stocks = () => {
+    let stocksList = [];
 
-  let stocksList = [];
+    for (let i = 0; i < stockNames.length; i++) {
+      stocksList.push({
+        stock: stockNames[i],
+        price: stocksLastPrice[i]
+      });
+    };
 
-  for (let i = 0; i < stockNames.length; i++) {
-    stocksList.push({
-      stock: stockNames[i],
-      price: stocksLastPrice[i]
-    });
+    return stocksList;
   };
 
-  console.log(stocksList);
+  fs.writeFile('stocks.json', JSON.stringify(stocks(), null, 2), err => {
+    if (err) throw new Error('Something went wrong');
+
+    console.log('Script has ended');
+  })
 
   await browser.close();
 
-  console.log('Fim da execução do programa');
 }
 
 webStractor();
